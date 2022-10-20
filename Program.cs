@@ -51,11 +51,22 @@
             //list.SearchNode(30);
 
             //UC8
+            //list.Add(56);
+            //list.Add(30);
+            //list.Add(70);
+            //list.InsertAtParticularPosition(2, 40);
+            //list.Display();
+
+            //UC9
             list.Add(56);
             list.Add(30);
             list.Add(70);
             list.InsertAtParticularPosition(2, 40);
             list.Display();
+            list.pop_at(2);
+            list.Size();
+            list.Display();
+
 
 
         }

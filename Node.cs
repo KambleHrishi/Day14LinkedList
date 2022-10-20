@@ -11,6 +11,10 @@ namespace Day14LinkedList
         public int data;         // elements added here
         public Node next;        // next element address stored here
 
+        public Node()
+        {
+        }
+
         public Node(int data)
         {
             this.data = data;
