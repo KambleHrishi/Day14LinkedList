@@ -9,6 +9,7 @@ namespace Day14LinkedList
     public class LinkedList
     {
         internal Node head;
+        internal Node tail;
 
         internal void Add(int data) //element addition 
         {
@@ -87,6 +88,30 @@ namespace Day14LinkedList
 
             Console.WriteLine("Value popped is {0}", this.head.data);
             this.head = this.head.next;
+        }
+
+        internal Node PopLast(Node popLast) //delete tail 70
+        {
+            Node newNode = this.head;
+            if (this.head == null)
+            {
+                Console.WriteLine("list is already empty, there is nothing to delete");
+                return null;
+            }
+            if (this.head.next == null)
+            {
+                this.head = null;
+                return null;
+            }
+            //checking for tail Node.
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            int PopLast = newNode.next.data;
+            newNode.next = null;
+            Console.WriteLine("\nnode deleted at Last position is " + PopLast);
+            return popLast;
         }
     }
 }
