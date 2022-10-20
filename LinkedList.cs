@@ -42,5 +42,10 @@ namespace Day14LinkedList
                 temp = temp.next;
             }
         }
+        public void Append(int data)
+        {
+            Add(data);
+            Console.WriteLine("{0} node Appended", data);
+        }
     }
 }
