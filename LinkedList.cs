@@ -76,5 +76,17 @@ namespace Day14LinkedList
             Console.WriteLine("Inserted value is " + head);
             return head;
         }
+
+        internal void Pop()    //delete head 56
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("LinkedList is empty , delete is not possible");
+                return;
+            }
+
+            Console.WriteLine("Value popped is {0}", this.head.data);
+            this.head = this.head.next;
+        }
     }
 }
