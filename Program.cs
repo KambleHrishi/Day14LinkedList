@@ -15,9 +15,15 @@
             //list.Add(56);
             //list.Display();
 
-            list.Append(56);
-            list.Append(30);
-            list.Append(70);
+            //list.Append(56);
+            //list.Append(30);
+            //list.Append(70);
+            //list.Display();
+
+            //UC4
+            list.Add(56);
+            list.Add(70);
+            list.InsertAtParticularPosition(2, 30);
             list.Display();
 
         }
