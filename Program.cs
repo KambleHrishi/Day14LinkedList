@@ -44,11 +44,18 @@
             //list.Display();
 
             //UC7
+            //list.Add(56);
+            //list.Add(30);
+            //list.Add(70);
+            //list.Display();
+            //list.SearchNode(30);
+
+            //UC8
             list.Add(56);
             list.Add(30);
             list.Add(70);
+            list.InsertAtParticularPosition(2, 40);
             list.Display();
-            list.SearchNode(30);
 
 
         }
