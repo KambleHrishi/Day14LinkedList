@@ -35,13 +35,20 @@
             //list.Display();
 
             //UC6
+            //list.Add(56);
+            //list.Add(30);
+            //list.Add(70);
+            //list.Display();
+            //Node popLast = null;
+            //list.PopLast(popLast);
+            //list.Display();
+
+            //UC7
             list.Add(56);
             list.Add(30);
             list.Add(70);
             list.Display();
-            Node popLast = null;
-            list.PopLast(popLast);
-            list.Display();
+            list.SearchNode(30);
 
 
         }

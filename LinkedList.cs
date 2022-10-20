@@ -90,7 +90,7 @@ namespace Day14LinkedList
             this.head = this.head.next;
         }
 
-        internal Node PopLast(Node popLast) //delete tail 70
+        internal Node PopLast(Node popLast)
         {
             Node newNode = this.head;
             if (this.head == null)
@@ -110,8 +110,24 @@ namespace Day14LinkedList
             }
             int PopLast = newNode.next.data;
             newNode.next = null;
-            Console.WriteLine("\nnode deleted at Last position is " + PopLast);
+            Console.WriteLine("node deleted at Last position is " + PopLast);
             return popLast;
+        }
+
+        public int SearchNode(int value) //find node with value 30
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("\nthe node is found : " + value);
+                    return value;
+                }
+                temp = temp.next;
+            }
+            Console.WriteLine("{0} is not a Linked List Node", value);
+            return 0;
         }
     }
 }
